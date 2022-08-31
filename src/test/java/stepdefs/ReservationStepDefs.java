@@ -59,8 +59,8 @@ public class ReservationStepDefs {
     @When("we are selecting airports")
     public void select_airport() {
         homePage.selectAirports(reservation);
-        homePage.pressGoBtn();
-        infoPage = new UserInfoPage(baseFunc);
+        infoPage =  homePage.pressGoBtn();
+        //infoPage = new UserInfoPage(baseFunc);
 
     }
 
