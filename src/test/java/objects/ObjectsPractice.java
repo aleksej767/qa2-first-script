@@ -5,14 +5,14 @@ import org.junit.jupiter.api.Test;
 public class ObjectsPractice {
     @Test
     public void workingWithObjects() {
-        Student pavel = new Student("Pavel","Pupkin");
+        Student pavel = new Student();
         //pavel.setFirstName("Pavel");
         //pavel.setLastName("Pupkin");
         pavel.setAge(28);
         pavel.setPhone(37112345678L);
         pavel.setMail("mail@mail.com");
 
-        Student nadja = new Student("Nadja","Dart");
+        Student nadja = new Student();
         nadja.setFirstName("Nadja");
         nadja.setLastName("Kjorts"); // - perepisivajet familiju.
         nadja.setAge(18);

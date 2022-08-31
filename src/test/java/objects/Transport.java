@@ -1,15 +1,23 @@
 package objects;
 
-import java.math.BigDecimal;
+public class Transport {
 
-public class Cars {
-
+    private String type;
     private float fuelConsumption;
     private float distance;
+    private float load;
 
-    public Cars(float fuelConsumption,float distance){
-    this.fuelConsumption = fuelConsumption;
-    this.distance = distance;
+    public Transport( float fuelConsumption, float distance) {
+        this.fuelConsumption = fuelConsumption;
+        this.distance = distance;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public float getFuelConsumption() {

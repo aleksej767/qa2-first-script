@@ -39,8 +39,8 @@ public class FirstSeleniumTest {
         wait.until(ExpectedConditions.elementToBeClickable(COOKIE_ACCEPT));
         driver.findElement(COOKIE_ACCEPT).click();
 
-        WebElement homeLogo = driver.findElement(HOME_PAGE_LOGO);
-        driver.findElement(HOME_PAGE_LOGO).click(); // pocemu ne klikajet?
+        //WebElement homeLogo = driver.findElement(HOME_PAGE_LOGO);
+        // driver.findElement(HOME_PAGE_LOGO).click(); // pocemu ne klikajet?
 
         List<WebElement> subMenuBtn = driver.findElements(RIGHT_SUBMENU_BTN);
 

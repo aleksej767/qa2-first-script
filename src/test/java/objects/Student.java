@@ -7,15 +7,32 @@ public class Student {
     private int age;
     private String phone;
     private String mail;
+    private int ID;
+    private String course;
 
-    //-------------CONSTRUCTOR--------------------
-    public Student(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public String getCourse() {
+        return course;
     }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+//-------------CONSTRUCTOR--------------------
+//    public Student(String firstName, String lastName) {
+//        this.firstName = firstName;
+//        this.lastName = lastName;
+//    }
 
 
     //--------GETTERS/SETTERS---------------------
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -47,7 +64,8 @@ public class Student {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-    public void setPhone(long phone){
+
+    public void setPhone(long phone) {
         this.phone = String.valueOf(phone);
     }
 
